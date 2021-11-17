@@ -88,6 +88,12 @@ int main(){
         int i=0;
         printf("Number of Players :  ");
         scanf("%d", &np);
+        for (int i = 0; i < np; i++)
+        {
+            printf("Name for player %d : ",i+1);
+            scanf("%s", name);
+            printf("playe %d = %s\n", i+1, name);
+        }
         int level;
         printf("choose level \n type 1 for easy\n type 2 for medium\n type 3 for hard\n");
         scanf("%d",&level);
